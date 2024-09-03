@@ -32,20 +32,10 @@ substitutions:
   NSPANEL_HA_BLUEPRINT_PREBUILT_WALL_DISPLAY: "false"
   ##############################
 
-packages:
-  version: !include nspanel_esphome_version.yaml
+#packages:
+#  version: !include nspanel_esphome_version.yaml
 
 ##### External components #####
-external_components:
-  - source:
-      # type: local
-      # path: packages/Blackymas/components
-      type: git
-      url: https://github.com/Blackymas/NSPanel_HA_Blueprint
-      ref: v4.3.11
-    components:
-      - nspanel_ha_blueprint
-    refresh: 30s
 
 ##### ESPHOME CONFIGURATION #####
 esphome:
